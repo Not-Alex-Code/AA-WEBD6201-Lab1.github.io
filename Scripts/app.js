@@ -5,6 +5,8 @@
 
     function DisplayHomePage()
     {
+        ChangeProductLabel();
+        AddNavBar();
         let AboutUsButton = document.getElementById("AboutUsButton");
         console.log(AboutUsButton);
         AboutUsButton.addEventListener("click", function()
@@ -64,6 +66,23 @@
         `; */
 
         // Insert Before Example
+    }
+
+    function ChangeProductLabel()
+    {
+        document.getElementById("projects").innerHTML = "<i class='fas fa-box'></i> Projects";
+        document.body.style.background = "url('./Images/background.jpg')";        
+    }
+
+    function AddNavBar()
+    {
+        let HR = document.createElement("li");
+        let Resources = document.createElement("a");
+        HR.setAttribute("class", "nav-item");
+        Resources.setAttribute("class", "nav-link");
+        HR.appendChild(Resources);
+        //HR.innerHTML = "<a class='nav-link' href='HumanResources.html'> Human Resources</a>";
+
     }
 
     // Named Function
