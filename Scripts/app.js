@@ -66,6 +66,35 @@
         // Insert Before Example
     }
 
+        function DisplayContactPage()
+    {
+        console.log("Contact Us Page");
+        
+        let sendButton = document.getElementById("sendButton");
+        let suscribeCheckbox = document.getElementById("suscribeCheckbox");
+
+        // localStorage.setItem("1", "Alex");
+        // console.log(localStorage.getItem("1"));
+        // //localStorage.removeItem("1");
+        // console.log(localStorage.length);
+
+        sendButton.addEventListener("click", function()
+        {
+            
+
+            if(suscribeCheckbox.checked)
+            {
+                let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value)
+                if(contact.serialize())
+                {
+                    let key = contact.FullName.substring(0, 1) + Date.now();
+
+                    localStorage.setItem(key, contact.serialize());
+                }
+            }
+        });
+    }
+
     // Named Function
     function Start()
     {
