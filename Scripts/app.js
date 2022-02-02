@@ -10,6 +10,7 @@
         console.log("About Page");
 
         //document.body.style.background = "url('./Images/AdobeStock_346156119.png')";
+        document.body.style.backgroundColor = "red";
 
         // Entry point
         let MainContent = document.getElementsByTagName("main")[0];       
@@ -32,24 +33,16 @@
         H1.textContent = detailHeader;
         MainContent.appendChild(H1);
 
-        // Adonai h2 Header
+        // Name h2 Header
         let H2 = document.createElement("h2");
         H2.setAttribute("id", "H2");
-        H2.setAttribute("class", "mt-5");
+        //H2.setAttribute("class", "mt-5");
         //H2.setAttribute("style", "Width: 100px");
-        let adonaiHeader = "Adonai Ford-Williams";
-        H2.textContent = adonaiHeader;
+        let nameHeader = "Adonai  Alexis";
+        H2.textContent = nameHeader;
         MainContent.appendChild(H2);
-
-        /** Alexis h2 Header
-        let H3 = document.createElement("h2");
-        H3.setAttribute("id", "H3");
-        H3.setAttribute("class", "p-5");
-        H3.setAttribute("style", "Width: 100px");
-        let alexisHeader = "Alexis";
-        H3.textContent = alexisHeader;
-        MainContent.appendChild(H3);
-        */
+        document.getElementById("H2").style.wordSpacing = "800px";
+        document.getElementById("H2").style.textIndent = "50px";
 
         // Adonai Profile Pic
         let AdonaiProfile = document.createElement("IMG");
@@ -62,12 +55,13 @@
         // Adonai p About paragraph
         let MainParagraph = document.createElement("p");
         MainParagraph.setAttribute("id", "MainParagraph");
-        MainParagraph.setAttribute("class", "pr-1");
+        //MainParagraph.setAttribute("class", "mr-50px");
         let AboutAdonai = "I am 24 years old. I am Computer Programmer at Durham College.\n";
         let SecondParagraphString = `${AboutAdonai}
          I like baking Strawberry Rhubarb Pies in the summer`;
         MainParagraph.textContent = SecondParagraphString;
         MainContent.appendChild(MainParagraph);
+        document.getElementById("MainParagraph").style.marginRight = "700px";
 
         // Coding Image
         let StockImage = document.createElement("IMG");
@@ -90,7 +84,8 @@
     }
     function DisplayHomePage()
     {
-        SetBackgroundImage();
+        document.body.style.backgroundColor = "blue";
+        //SetBackgroundImage();
         AddNavBar();
         let AboutUsButton = document.getElementById("AboutUsButton");
         console.log(AboutUsButton);
