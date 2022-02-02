@@ -1,6 +1,6 @@
-<!--ICE 2
+<!--Lab 1
 Adonai Ford-Williams
-January 14th, 2021
+February 4th, 2022
 Durham College-->
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@ Durham College-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Contact</title>
     <!-- CSS Section -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -18,7 +18,7 @@ Durham College-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><i class="fas fa-spider"></i> WEBD6201</a>
+              <a class="navbar-brand" href="index.html"><i class="fas fa-i-cursor"></i> A&A Website</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -31,7 +31,7 @@ Durham College-->
                     <a class="nav-link" href="services.html"><i class="fas fa-people-carry"></i> Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="products.html"><i class="fas fa-box"></i> Products</a>
+                    <a id="projects" class="nav-link" href="products.html"><i class="fas fa-box"></i> Products</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="about.html"><i class="fas fa-question"></i> About Us</a>
@@ -47,7 +47,7 @@ Durham College-->
 
 
     <div class="container">
-        <h1>Adonai's Contact Page</h1>
+        <h1>Our Contact Page</h1>
     </div>
     
           
@@ -80,7 +80,7 @@ Durham College-->
 
           <div class="mb-3 form-check">
             <input id="suscribeCheckbox" name="suscribeCheckbox"  type="checkbox" class="form-check-input" >
-            <label class="form-check-label" for="exampleCheck1">Suscribe To Our Contact List</label>
+            <label class="form-check-label" for="exampleCheck1">Subscribe To Our Contact List</label>
           </div>
 
           <button id="sendButton" type="submit" class="btn btn-primary"><i class="fas fa-envelope fa-lg"></i>Submit</button>
@@ -91,6 +91,8 @@ Durham College-->
     <!-- Scripting Section -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="./Scripts/contact.js"></script>
     <script src="./Scripts/app.js"></script>
 </body>
 </html>
