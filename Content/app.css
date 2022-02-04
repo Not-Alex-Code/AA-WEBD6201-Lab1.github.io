@@ -1,0 +1,43 @@
+
+img{
+    height: 400px;
+    width: 400px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#left{
+    float: left;
+}
+
+#right{
+    float: right;
+}
+
+.row{
+    display: flex;
+}
+
+.column{
+    flex: 10%;
+    padding: 10px;
+}
+
+.AdonaiParagraph{
+    display: flex;
+    padding-right: 700px;
+}
+
+.logo{
+    height: 100px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
