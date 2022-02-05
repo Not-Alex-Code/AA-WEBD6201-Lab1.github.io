@@ -10,7 +10,7 @@
         console.log("About Page");
 
         //document.body.style.background = "url('./Images/AdobeStock_346156119.png')";
-        document.body.style.backgroundColor = "red";
+        document.body.style.backgroundColor = "lightblue";
 
         // Entry point
         let MainContent = document.getElementsByTagName("main")[0];       
@@ -50,14 +50,6 @@
         document.getElementById("H2").style.wordSpacing = "670px";
         document.getElementById("H2").style.textIndent = "100px";
 
-        /* Adonai Profile Pic
-        let AdonaiProfile = document.createElement("IMG");
-        AdonaiProfile.setAttribute("src","./Images/Adonai-Profile.jpg");
-        AdonaiProfile.setAttribute("width", "200");
-        AdonaiProfile.setAttribute("height", "200");
-        AdonaiProfile.setAttribute("alt", "Adonai");
-        MainContent.appendChild(AdonaiProfile);
-        */
 
         // Adonai p About paragraph
         let MainParagraph = document.createElement("p");
@@ -71,20 +63,38 @@
         MainContent.appendChild(MainParagraph);
         let AdonaiP = document.getElementById("second");
         AdonaiP.before(MainParagraph);
+
+        //Alexis p About paragraph
+        // let MainParagraph2 = document.create("p");
+        // MainParagraph2.setAttribute("id", "MainParagraph");
+        // MainParagraph2.setAttribute("class", "AlexisParagraph");
+        // let AboutAlex = "Hi Im Alexis Morales, Im a CPGM student at Durham College. \n"; 
+        // let SecondParagraphString = `${AboutAlex}
+        // I love to program with the coding languages: C++, Java, Python`;
+        // MainParagraph.textContent = SecondParagraphString;
+        // MainContent.appendChild(MainParagraph2);
+        // let AboutAlex = document.getElementById("third");
+        // AboutAlex.before(MainParagraph2)
+
+        
     }
 
     function DisplayProductPage()
     {
+        document.body.style.backgroundColor = "lightblue";
         console.log("Products Page");
+
+
     }
 
     function DisplayServicesPage()
     {
+        document.body.style.backgroundColor = "lightblue";
         console.log("Services");
     }
     function DisplayHomePage()
     {
-        document.body.style.backgroundColor = "blue";
+        document.body.style.backgroundColor = "lightblue";
         //SetBackgroundImage();
         AddNavBar();
         let AboutUsButton = document.getElementById("AboutUsButton");
@@ -150,6 +160,7 @@
 
     function DisplayContactPage()
     {
+        document.body.style.backgroundColor = "lightblue";
         console.log("Contact Page");
 
         let sendButton = document.getElementById("sendButton");
@@ -178,6 +189,7 @@
 
     function DisplayContactListPage()
     {
+        document.body.style.backgroundColor = "lightblue";
         console.log("Contact List Page");
 
         if(localStorage.length > 0) // Make sure not empty
