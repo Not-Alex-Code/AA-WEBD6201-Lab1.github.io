@@ -71,6 +71,18 @@
         StockImage.setAttribute("alt", "background");
         MainContent.appendChild(StockImage);
         
+                //Alexis p About paragraph
+        // let MainParagraph2 = document.create("p");
+        // MainParagraph2.setAttribute("id", "MainParagraph");
+        // MainParagraph2.setAttribute("class", "AlexisParagraph");
+        // let AboutAlex = "Hi Im Alexis Morales, Im a CPGM student at Durham College. \n"; 
+        // let SecondParagraphString = `${AboutAlex}
+        // I love to program with the coding languages: C++, Java, Python`;
+        // MainParagraph.textContent = SecondParagraphString;
+        // MainContent.appendChild(MainParagraph2);
+        // let AboutAlex = document.getElementById("third");
+        // AboutAlex.before(MainParagraph2)
+        
     }
 
     function DisplayProductPage()
